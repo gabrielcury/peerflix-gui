@@ -1,4 +1,7 @@
 {
   "name": "peerflix-gui",
-  "main": "index.html"
+  "main": "index.html",
+    "scripts":{
+        "preinstall": "npm list module -g || gksu npm install peerflix -g"
+    }
 }
