@@ -2,11 +2,29 @@
 <html>
 
 <head>
-    <title>Hello World!</title>
+    <title>peerflix-gui</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700' rel='stylesheet' type='text/css'>
+    <link href="app.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <h1>Hello World!</h1>
+    <div class="header">
+        <p class="largeText">
+            peerflix-gui
+        </p>
+    </div>
+    <div class="step1 inputArea">
+        <textarea class="magnetURI" placeholder="put your magnet uri here" rows="4" cols="50">
+        </textarea>
+        <br>
+        <button type="submit" id="submitURI">Go</button>
+    </div>
+    
+    <div class="step2 filePicker">
+        The list of files will be here
+    </div>
+    <script type="text/javascript" src="jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
 </body>
 
 </html>
