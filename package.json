@@ -1,7 +1,11 @@
 {
   "name": "peerflix-gui",
   "main": "index.html",
+    "version": "0.0.1",
     "scripts":{
-        "preinstall": "npm list module -g || gksu npm install peerflix -g"
+        "preinstall": "npm list peerflix -g || gksu npm install peerflix -g"
+    },
+    "dependencies":{
+        "ansi-stripper": "0.0.1"
     }
 }
