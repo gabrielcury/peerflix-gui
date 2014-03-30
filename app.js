@@ -23,7 +23,7 @@
                     //console.log("clicked");
                     //console.log("trying to run: " + "peerflix '" + magnetURI + "'" + "--vlc" + " --index " + $("#indexID").val());
                     var child2 = exec("peerflix '" + magnetURI + "'" + " --vlc" + " --index " + $("#indexID").val(), function (error, stdout, stderr) {
-                        $("#files").append(ansiStrip(stdout));
+                        //$("#files").append(ansiStrip(stdout));
                         //document.reload();
                     });
                     $("#notice").append("Please wait, autoplay sometimes takes a few moments to start...");
