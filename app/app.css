@@ -1,0 +1,24 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.largeText {
+    font-size:250%;
+    font-weight: 700
+}
+
+.magnetURI {
+    width:"400px";
+    height:"100px";
+}
+
+.submitURI {
+
+}
+
+.step2 {
+    display:none;
+}
+
+.step3 {
+    display: none;
+}
