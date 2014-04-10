@@ -4,9 +4,12 @@
     var sys = require('sys'),
         exec = require('child_process').exec,
         child,
-        ansiStrip = require('ansi-stripper');
+        ansiStrip = require('ansi-stripper'),
+        versionNumber = "0.0.2";
 
     $(document).ready(function () {
+        //push app version number to DOM
+        $(".versionNum").append(versionNumber);
         $("#submitURI").click(function () {
             //console.log("clicked");
             var magnetURI = $("#magnet").val();

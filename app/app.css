@@ -1,9 +1,14 @@
 body{
     font-family: 'Roboto', sans-serif;
+    color:white;
+    background:black;
 }
 .largeText {
-    font-size:250%;
-    font-weight: 700
+    font-size:200%;
+    font-weight: 700;
+    background:#B9090B;
+    display:inline-block;
+    padding-right:100px;
 }
 
 .magnetURI {
@@ -21,4 +26,10 @@ body{
 
 .step3 {
     display: none;
+}
+
+.versionNum {
+    background:#B9090B;
+    display:inline-block;
+    font-size:80%;
 }
