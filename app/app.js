@@ -13,12 +13,12 @@
         $("#submitURI").click(function () {
             //console.log("clicked");
             var magnetURI = $("#magnet").val();
-            //console.log("peerflix '" + magnetURI + "'" + "--list");
+            console.log("peerflix '" + magnetURI + "'" + " --list");
             //run peerflix and get our data
             child = exec("peerflix '" + magnetURI + "'" + " --list", function (error, stdout, stderr){
-                //console.log("stderr: " + stderr);
-                //console.log("error: " + error);
-                //console.log("stdout: " + stdout);
+                console.log("stderr: " + stderr);
+                console.log("error: " + error);
+                console.log("stdout: " + stdout);
                 $("#files").append(ansiStrip(stdout));
                 $("#pleaseWait").hide();
                 $(".step3").fadeIn(500);

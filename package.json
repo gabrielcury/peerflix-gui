@@ -9,6 +9,6 @@
         "ansi-stripper": "0.0.1"
     },
     "window":{
-        "toolbar": false
+        "toolbar": true
     }
 }
