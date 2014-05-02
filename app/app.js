@@ -32,10 +32,16 @@
                 engine.on('ready', function () {
                     filesInTorrent = engine.files;
                     //populate file picker
-                    var bla;
-                    $('#filePicker').html(bla);
+                    for(var i = 0; i < filesInTorrent.length; i++) {
+                        $('#filePicker').append("<div class='file'>" + filesInTorrent[i].name + "<input type='radio' name='fileSelection'></div>");
+                    }
                     //define all event handlers here
+                    $('#submitFile').click(function () {
                         //inside click() of the Start button, start the stream, and the express http server
+
+                        //move to case 2
+                        uiHandler(2);
+                    });
 
                 });
             });
