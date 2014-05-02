@@ -10,6 +10,8 @@
     var bytes = require('bytes');
 
     //function definitions
+
+    //note: apparently this isn't going to work.
     function uiHandler (step) {
         var torrentMagnetLink = "";
         var selectedFileIndex;
@@ -17,12 +19,12 @@
         var filesInTorrent;
         switch (step) {
         case 0:
-            $('#uiHolder').load('ui/init.html', function (responseText, responseStatus, XMLHttpRequest) {
+            $('#uiHolder').load('app/ui/init.html', function (responseText, responseStatus, XMLHttpRequest) {
                 //define all event handlers here
                 $('#submitURI').click(function () {
                     torrentMagnetLink = $('.magnetURI').val();
+                    uiHandler(1);
                 });
-                uiHandler(1);
             });
             break;
         case 1:
@@ -42,7 +44,7 @@
                         //move to case 2
                         uiHandler(2);
                     });
-
+                    //engine code ends here
                 });
             });
             break;
@@ -57,4 +59,4 @@
     $(document).ready(function () {
         uiHandler(0);
     });
-}());
+}(jQuery));
