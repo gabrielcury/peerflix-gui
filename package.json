@@ -1,12 +1,13 @@
 {
   "name": "peerflix-gui",
+    "author": "nick pelone",
+    "license" : "MIT",
   "main": "index.html",
-    "version": "0.0.2",
-    "scripts":{
-        "preinstall": "npm list peerflix -g || sudo npm install peerflix -g"
-    },
+    "version": "0.1.0",
     "dependencies":{
-        "ansi-stripper": "0.0.1"
+    "bytes": "^0.3.0",
+    "express": "^4.1.0",
+    "torrent-stream": "^0.7.3"
     },
     "window":{
         "toolbar": true
