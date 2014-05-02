@@ -1,35 +1,41 @@
-body{
+body {
     font-family: 'Roboto', sans-serif;
-    color:white;
-    background:black;
+    color: white;
+    background: black;
 }
 .largeText {
-    font-size:200%;
+    font-size: 200%;
     font-weight: 700;
-    background:#B9090B;
-    display:inline-block;
-    padding-right:100px;
+    background: #B9090B;
+    display: inline-block;
+    padding-right: 100px;
 }
-
 .magnetURI {
-    width:"400px";
-    height:"100px";
+    width: "400px";
+    height: "100px";
 }
-
-.submitURI {
-
+.submitURI {} .step2 {
+    display: none;
 }
-
-.step2 {
-    display:none;
-}
-
 .step3 {
     display: none;
 }
-
 .versionNum {
-    background:#B9090B;
-    display:inline-block;
-    font-size:80%;
+    background: #B9090B;
+    display: inline-block;
+    font-size: 80%;
+}
+#filePicker {
+    display: inline-table;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    border-color: #B9090B;
+}
+.file {
+    font-size: 90%;
+    color: black;
+    display: inline-block;
+    background: #efefef;
+    margin: 3px;
 }
